@@ -1,0 +1,32 @@
+{
+  "name": "react-mobx-loader",
+  "version": "1.7.6",
+  "main": "build/index.js",
+  "typings": "build/index",
+  "repository": "git@github.com:code-202/react-mobx-loader.git",
+  "author": "jngermon <jn.germon@code202.fr>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "concurrently -k -n \"Typescript,TSLint\" -p \"[{name}]\" -c \"blue,green\" \"tsc --watch\" \"esw --watch --ext=.ts,.tsx ./src\"",
+    "build": "tsc",
+    "eslint": "esw --ext=.ts,.tsx ./src"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.3.1",
+    "@types/react": "^18.0.28",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
+    "concurrently": "^7.6.0",
+    "eslint": "^8.34.0",
+    "eslint-watch": "^8.0.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "classnames": "^2.3.2",
+    "mobx": "^6.8.0",
+    "mobx-react": "^7.6.0",
+    "react": "^18.2.0",
+    "rich-agent": "^2.6.0"
+  }
+}
