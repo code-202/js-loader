@@ -14,10 +14,10 @@ export class PrivateLoader implements LoaderRequest.Informations {
     constructor (request: Request.Request) {
 
         makeObservable(this, {
-            status: action,
-            progress: action,
-            uploadProgress: action,
-            errors: action,
+            status: observable,
+            progress: observable,
+            uploadProgress: observable,
+            errors: observable,
         })
 
         this.status = 'waiting'

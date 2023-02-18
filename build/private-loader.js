@@ -10,10 +10,10 @@ class PrivateLoader {
     _request;
     constructor(request) {
         (0, mobx_1.makeObservable)(this, {
-            status: mobx_1.action,
-            progress: mobx_1.action,
-            uploadProgress: mobx_1.action,
-            errors: mobx_1.action,
+            status: mobx_1.observable,
+            progress: mobx_1.observable,
+            uploadProgress: mobx_1.observable,
+            errors: mobx_1.observable,
         });
         this.status = 'waiting';
         this.progress = 0;
