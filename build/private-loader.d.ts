@@ -7,4 +7,6 @@ export declare class PrivateLoader implements LoaderRequest.Informations {
     errors: string[];
     protected _request: Request.Request;
     constructor(request: Request.Request);
+    serialize(): Record<string, any>;
+    deserialize(data: Record<string, any>): void;
 }
