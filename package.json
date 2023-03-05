@@ -1,9 +1,9 @@
 {
-  "name": "react-mobx-loader",
+  "name": "@code-202/loader",
   "version": "1.9.0",
   "main": "build/index.js",
   "typings": "build/index",
-  "repository": "git@github.com:code-202/react-mobx-loader.git",
+  "repository": "git@github.com:code-202/js-loader.git",
   "author": "jngermon <jn.germon@code202.fr>",
   "license": "MIT",
   "private": false,
@@ -15,19 +15,19 @@
   "devDependencies": {
     "@types/classnames": "^2.3.1",
     "@types/react": "^18.0.28",
-    "@typescript-eslint/eslint-plugin": "^5.52.0",
-    "@typescript-eslint/parser": "^5.52.0",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
     "concurrently": "^7.6.0",
-    "eslint": "^8.34.0",
+    "eslint": "^8.35.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-watch": "^8.0.0",
     "typescript": "^4.9.5"
   },
   "dependencies": {
+    "@code-202/agent": "^3.2.1",
     "classnames": "^2.3.2",
     "mobx": "^6.8.0",
     "mobx-react": "^7.6.0",
-    "react": "^18.2.0",
-    "rich-agent": "^3.2.1"
+    "react": "^18.2.0"
   }
 }

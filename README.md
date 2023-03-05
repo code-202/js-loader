@@ -1,2 +1,2 @@
-# react-mobx-loader
+# js-loader
 Dynamic loader for react
