@@ -1,4 +1,4 @@
-import { Request as BaseRequest, Response } from 'rich-agent';
+import { Request as BaseRequest, Response } from '@code-202/agent';
 export interface Informations extends BaseRequest.RequestInformations {
 }
 export type Status = BaseRequest.Status;

@@ -1,4 +1,4 @@
-import { BasicRequest } from 'rich-agent'
+import { BasicRequest } from '@code-202/agent'
 import { CustomLoader } from './custom-loader'
 
 export class SimpleLoader extends CustomLoader {

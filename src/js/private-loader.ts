@@ -1,4 +1,4 @@
-import { Request } from 'rich-agent'
+import { Request } from '@code-202/agent'
 import * as LoaderRequest from './loader-request'
 import { makeObservable, observable, action } from 'mobx'
 
