@@ -38,22 +38,22 @@ class PrivateLoader {
             }
         }));
     }
-    serialize() {
+    normalize() {
         return {
             status: this.status,
             progress: this.progress,
             uploadProgress: this.uploadProgress,
             errors: this.errors,
-            request: this._request.serialize(),
+            request: this._request.normalize(),
         };
     }
-    deserialize(data) {
+    denormalize(data) {
         try {
             this.status = data.status;
             this.progress = data.progress;
             this.uploadProgress = data.uploadProgress;
             this.errors = data.errors;
-            this._request.deserialize(data.request);
+            this._request.denormalize(data.request);
         }
         catch (e) {
             console.error('Impossible to deserialize : bad data');

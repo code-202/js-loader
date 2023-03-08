@@ -1,8 +1,9 @@
 import { Request } from '@code-202/agent'
+import { Normalizable } from '@code-202/serializer'
 import * as LoaderRequest from './loader-request'
 import { makeObservable, observable, action } from 'mobx'
 
-export class PrivateLoader implements LoaderRequest.Informations {
+export class PrivateLoader implements LoaderRequest.Informations, Normalizable<PrivateLoaderNormalized> {
 
     public status: LoaderRequest.Status
     public progress: number
@@ -47,26 +48,34 @@ export class PrivateLoader implements LoaderRequest.Informations {
         }))
     }
 
-    public serialize(): Record<string, any> {
+    public normalize(): PrivateLoaderNormalized {
         return {
             status: this.status,
             progress: this.progress,
             uploadProgress: this.uploadProgress,
             errors: this.errors,
-            request: this._request.serialize(),
+            request: this._request.normalize(),
         }
     }
 
-    public deserialize(data: Record<string, any>): void {
+    public denormalize(data: PrivateLoaderNormalized): void {
         try {
             this.status = data.status
             this.progress = data.progress
             this.uploadProgress = data.uploadProgress
             this.errors = data.errors
 
-            this._request.deserialize(data.request)
+            this._request.denormalize(data.request)
         } catch (e) {
             console.error('Impossible to deserialize : bad data')
         }
     }
+}
+
+export interface PrivateLoaderNormalized {
+    status: LoaderRequest.Status
+    progress: number
+    uploadProgress: number
+    errors: string[]
+    request: Request.RequestNormalized
 }
