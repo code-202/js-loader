@@ -1,7 +1,7 @@
 import { Request } from '@code-202/agent';
-import { Normalizable } from '@code-202/serializer';
+import { Normalizable, Denormalizable } from '@code-202/serializer';
 import * as LoaderRequest from './loader-request';
-export declare class PrivateLoader implements LoaderRequest.Informations, Normalizable<PrivateLoaderNormalized> {
+export declare class PrivateLoader implements LoaderRequest.Informations, Normalizable<PrivateLoaderNormalized>, Denormalizable<PrivateLoaderNormalized> {
     status: LoaderRequest.Status;
     progress: number;
     uploadProgress: number;

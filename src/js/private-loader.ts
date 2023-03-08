@@ -1,9 +1,9 @@
 import { Request } from '@code-202/agent'
-import { Normalizable } from '@code-202/serializer'
+import { Normalizable, Denormalizable } from '@code-202/serializer'
 import * as LoaderRequest from './loader-request'
 import { makeObservable, observable, action } from 'mobx'
 
-export class PrivateLoader implements LoaderRequest.Informations, Normalizable<PrivateLoaderNormalized> {
+export class PrivateLoader implements LoaderRequest.Informations, Normalizable<PrivateLoaderNormalized>, Denormalizable<PrivateLoaderNormalized> {
 
     public status: LoaderRequest.Status
     public progress: number
