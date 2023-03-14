@@ -50,7 +50,7 @@ class LoadingScreen extends React.Component {
                 break;
         }
         return (React.createElement("div", { className: (0, classnames_1.default)('loading-screen', 'text-center', className) },
-            React.createElement("div", { className: "loading-screen-indicator" }, (progress === 0 || progress === undefined) ? (React.createElement(react_1.default, { path: js_1.mdiLoading, size: 1, spin: true })) : (React.createElement("div", { className: "progress", style: { height: '1px' } },
+            React.createElement("div", { className: "loading-screen-indicator" }, (progress === 0 || progress === undefined) ? (React.createElement(react_1.default, { path: js_1.mdiLoading, size: iconSize, spin: true })) : (React.createElement("div", { className: "progress", style: { height: '1px' } },
                 React.createElement("div", { className: (0, classnames_1.default)('progress-bar', 'bg-primary'), role: "progressbar", style: { width: progress + '%' } }))))));
     }
 }

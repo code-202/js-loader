@@ -38,7 +38,7 @@ export default class LoadingScreen extends React.Component<Props, State> {
             <div className={cn('loading-screen', 'text-center', className)}>
                 <div className="loading-screen-indicator">
                     { (progress === 0 || progress === undefined) ? (
-                        <Icon path={mdiLoading} size={1} spin={true}/>
+                        <Icon path={mdiLoading} size={iconSize} spin={true}/>
                     ) : (
                         <div className="progress" style={{ height: '1px' }}>
                             <div className={cn('progress-bar', 'bg-primary')} role="progressbar" style={{ width: progress + '%' }}></div>
