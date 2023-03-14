@@ -28,27 +28,29 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __importStar(require("react"));
 const classnames_1 = __importDefault(require("classnames"));
+const react_1 = __importDefault(require("@mdi/react"));
+const js_1 = require("@mdi/js");
 class LoadingScreen extends React.Component {
     render() {
         const { progress, className, size, ...otherProps } = this.props;
-        let classSize = 'mdi-18px';
+        let iconSize = 1;
         switch (size) {
             case 'xl':
-                classSize = 'mdi-48px';
+                iconSize = 5;
                 break;
             case 'lg':
-                classSize = 'mdi-36px';
+                iconSize = 3;
                 break;
             case 'md':
-                classSize = 'mdi-24px';
+                iconSize = 2;
                 break;
             case 'sm':
             default:
-                classSize = 'mdi-18px';
+                iconSize = 1;
                 break;
         }
         return (React.createElement("div", { className: (0, classnames_1.default)('loading-screen', 'text-center', className) },
-            React.createElement("div", { className: "loading-screen-indicator" }, (progress === 0 || progress === undefined) ? (React.createElement("i", { className: (0, classnames_1.default)('mdi mdi-loading mdi-spin', classSize), "aria-hidden": "true" })) : (React.createElement("div", { className: "progress", style: { height: '1px' } },
+            React.createElement("div", { className: "loading-screen-indicator" }, (progress === 0 || progress === undefined) ? (React.createElement(react_1.default, { path: js_1.mdiLoading, size: 1, spin: true })) : (React.createElement("div", { className: "progress", style: { height: '1px' } },
                 React.createElement("div", { className: (0, classnames_1.default)('progress-bar', 'bg-primary'), role: "progressbar", style: { width: progress + '%' } }))))));
     }
 }

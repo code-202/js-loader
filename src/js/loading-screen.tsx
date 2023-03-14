@@ -1,5 +1,7 @@
 import * as React from 'react'
 import cn from 'classnames'
+import Icon from '@mdi/react'
+import { mdiLoading } from '@mdi/js'
 
 interface Props {
     progress?: number
@@ -15,20 +17,20 @@ export default class LoadingScreen extends React.Component<Props, State> {
     render () {
         const { progress, className, size, ...otherProps } = this.props
 
-        let classSize = 'mdi-18px'
+        let iconSize = 1
         switch (size) {
         case 'xl':
-            classSize = 'mdi-48px'
+            iconSize = 5
             break
         case 'lg':
-            classSize = 'mdi-36px'
+            iconSize = 3
             break
         case 'md':
-            classSize = 'mdi-24px'
+            iconSize = 2
             break
         case 'sm':
         default:
-            classSize = 'mdi-18px'
+            iconSize = 1
             break
         }
 
@@ -36,7 +38,7 @@ export default class LoadingScreen extends React.Component<Props, State> {
             <div className={cn('loading-screen', 'text-center', className)}>
                 <div className="loading-screen-indicator">
                     { (progress === 0 || progress === undefined) ? (
-                        <i className={cn('mdi mdi-loading mdi-spin', classSize)} aria-hidden="true"></i>
+                        <Icon path={mdiLoading} size={1} spin={true}/>
                     ) : (
                         <div className="progress" style={{ height: '1px' }}>
                             <div className={cn('progress-bar', 'bg-primary')} role="progressbar" style={{ width: progress + '%' }}></div>
