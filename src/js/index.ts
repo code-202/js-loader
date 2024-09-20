@@ -1,10 +1,11 @@
-import Loader from './loader'
-import LoaderIndicator from './loader-indicator'
-import LoadingScreen from './loading-screen'
-import * as LoaderRequest from './loader-request'
 import { CustomLoader } from './custom-loader'
 import { JsonLoader } from './json-loader'
+import Loader from './loader'
+import LoaderIndicator from './loader-indicator'
+import * as LoaderRequest from './loader-request'
+import LoadingScreen from './loading-screen'
 import * as Manager from './manager'
+import { MultipleLoader } from './multiple-loader'
 import { PrivateLoader } from './private-loader'
 import { SimpleLoader } from './simple-loader'
 
@@ -16,6 +17,7 @@ export {
     LoaderRequest,
     LoadingScreen,
     Manager,
+    MultipleLoader,
     PrivateLoader,
     SimpleLoader
 }
