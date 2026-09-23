@@ -1,36 +1,38 @@
 {
-  "name": "@code-202/loader",
-  "version": "2.3.0",
-  "main": "build/index.js",
-  "typings": "build/index",
-  "repository": "git@github.com:code-202/js-loader.git",
-  "author": "jngermon <jn.germon@code202.fr>",
-  "license": "MIT",
-  "private": false,
-  "scripts": {
-    "dev": "concurrently -k -n \"Typescript,TSLint\" -p \"[{name}]\" -c \"blue,green\" \"tsc --watch\" \"esw --watch --ext=.ts,.tsx ./src\"",
-    "build": "tsc",
-    "eslint": "esw --ext=.ts,.tsx ./src"
-  },
-  "devDependencies": {
-    "@types/classnames": "^2.3.1",
-    "@types/react": "^18.0.28",
-    "@typescript-eslint/eslint-plugin": "^5.53.0",
-    "@typescript-eslint/parser": "^5.53.0",
-    "concurrently": "^7.6.0",
-    "eslint": "^8.35.0",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-watch": "^8.0.0",
-    "typescript": "^4.9.5"
-  },
-  "dependencies": {
-    "@code-202/agent": "^4.0.0",
-    "@code-202/serializer": "^1.0.0",
-    "@mdi/js": "^7.1.96",
-    "@mdi/react": "^1.6.1",
-    "classnames": "^2.3.2",
-    "mobx": "^6.8.0",
-    "mobx-react": "^7.6.0",
-    "react": "^18.2.0"
-  }
+    "name": "@code-202/loader",
+    "version": "3.0.0",
+    "main": "build/index.js",
+    "typings": "build/index",
+    "repository": "git@github.com:code-202/js-loader.git",
+    "author": "jngermon <jn.germon@code202.fr>",
+    "license": "MIT",
+    "private": false,
+    "scripts": {
+        "dev": "concurrently -k -n \"Typescript,TSLint\" -p \"[{name}]\" -c \"blue,green\" \"tsc --watch\" \"esw --watch --ext=.ts,.tsx ./src\"",
+        "build": "tsc",
+        "eslint": "eslint --ext=.ts,.tsx src/js/*"
+    },
+    "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "@types/classnames": "^2.3.4",
+        "@types/react": "^19.3.0",
+        "@typescript-eslint/eslint-plugin": "^8.70.1",
+        "@typescript-eslint/parser": "^8.70.1",
+        "concurrently": "^10.0.5",
+        "eslint": "^10.11.0",
+        "eslint-plugin-react": "^7.37.5",
+        "eslint-watch": "^8.0.0",
+        "typescript": "^6.0.1",
+        "typescript-eslint": "^8.70.1"
+    },
+    "dependencies": {
+        "@code-202/agent": "^4.5.0",
+        "@code-202/serializer": "^1.1.0",
+        "@mdi/js": "^7.4.47",
+        "@mdi/react": "^1.6.1",
+        "classnames": "^2.5.1",
+        "mobx": "^7.0.4",
+        "mobx-react": "^10.0.2",
+        "react": "^19.3.0"
+    }
 }

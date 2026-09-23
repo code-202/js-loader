@@ -70,3 +70,4 @@ class MultipleLoader {
     }
 }
 exports.MultipleLoader = MultipleLoader;
+//# sourceMappingURL=multiple-loader.js.map

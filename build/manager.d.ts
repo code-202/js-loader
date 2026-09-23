@@ -5,3 +5,4 @@ export declare class LoaderManager {
 }
 export declare const Manager: LoaderManager;
 export type ContentStrategy = 'wait' | 'show';
+//# sourceMappingURL=manager.d.ts.map

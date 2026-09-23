@@ -12,3 +12,4 @@ class LoaderManager {
 }
 exports.LoaderManager = LoaderManager;
 exports.Manager = new LoaderManager();
+//# sourceMappingURL=manager.js.map

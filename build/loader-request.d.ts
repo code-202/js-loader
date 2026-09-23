@@ -7,3 +7,4 @@ export interface Request extends Informations {
     load(): Promise<Response.Response>;
     request: BaseRequest.Request;
 }
+//# sourceMappingURL=loader-request.d.ts.map

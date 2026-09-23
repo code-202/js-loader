@@ -14,12 +14,13 @@ interface State {
 }
 declare class LoaderIndicator extends React.Component<Props, State> {
     constructor(props: Props);
-    render(): JSX.Element | null;
-    renderWaiting(): JSX.Element | null;
-    renderPending(): JSX.Element | null;
-    renderError(): JSX.Element | null;
-    renderCanceled(): JSX.Element | null;
-    renderDone(): JSX.Element | null;
+    render(): React.JSX.Element | null;
+    renderWaiting(): React.JSX.Element | null;
+    renderPending(): React.JSX.Element | null;
+    renderError(): React.JSX.Element | null;
+    renderCanceled(): React.JSX.Element | null;
+    renderDone(): React.JSX.Element | null;
 }
 declare const _default: typeof LoaderIndicator;
 export default _default;
+//# sourceMappingURL=loader-indicator.d.ts.map

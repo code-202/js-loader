@@ -20,3 +20,4 @@ class CustomLoader extends private_loader_1.PrivateLoader {
     }
 }
 exports.CustomLoader = CustomLoader;
+//# sourceMappingURL=custom-loader.js.map

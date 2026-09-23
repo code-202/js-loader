@@ -61,3 +61,4 @@ class PrivateLoader {
     }
 }
 exports.PrivateLoader = PrivateLoader;
+//# sourceMappingURL=private-loader.js.map

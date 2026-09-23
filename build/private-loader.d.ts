@@ -18,3 +18,4 @@ export interface PrivateLoaderNormalized {
     errors: string[];
     request: Request.RequestNormalized;
 }
+//# sourceMappingURL=private-loader.d.ts.map

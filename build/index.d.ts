@@ -9,3 +9,4 @@ import { MultipleLoader } from './multiple-loader';
 import { PrivateLoader } from './private-loader';
 import { SimpleLoader } from './simple-loader';
 export { CustomLoader, JsonLoader, Loader, LoaderIndicator, LoaderRequest, LoadingScreen, Manager, MultipleLoader, PrivateLoader, SimpleLoader };
+//# sourceMappingURL=index.d.ts.map

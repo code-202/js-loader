@@ -13,12 +13,13 @@ interface State {
 }
 declare class Loader extends React.Component<Props, State> {
     constructor(props: Props);
-    render(): JSX.Element;
-    renderWaiting(): JSX.Element;
-    renderPending(): JSX.Element;
-    renderError(): JSX.Element;
-    renderCanceled(): JSX.Element;
-    renderDone(): JSX.Element;
+    render(): React.JSX.Element;
+    renderWaiting(): React.JSX.Element;
+    renderPending(): React.JSX.Element;
+    renderError(): React.JSX.Element;
+    renderCanceled(): React.JSX.Element;
+    renderDone(): React.JSX.Element;
 }
 declare const _default: typeof Loader;
 export default _default;
+//# sourceMappingURL=loader.d.ts.map

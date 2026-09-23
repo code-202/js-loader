@@ -9,3 +9,4 @@ class JsonLoader extends custom_loader_1.CustomLoader {
     }
 }
 exports.JsonLoader = JsonLoader;
+//# sourceMappingURL=json-loader.js.map

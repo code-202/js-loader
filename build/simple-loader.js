@@ -9,3 +9,4 @@ class SimpleLoader extends custom_loader_1.CustomLoader {
     }
 }
 exports.SimpleLoader = SimpleLoader;
+//# sourceMappingURL=simple-loader.js.map

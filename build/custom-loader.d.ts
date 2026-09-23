@@ -7,3 +7,4 @@ export declare class CustomLoader extends PrivateLoader implements LoaderRequest
     get responseData(): any | null;
     load(): Promise<Response.Response>;
 }
+//# sourceMappingURL=custom-loader.d.ts.map

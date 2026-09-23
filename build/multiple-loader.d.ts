@@ -8,3 +8,4 @@ export declare class MultipleLoader implements Informations {
     get progress(): number;
     get uploadProgress(): number;
 }
+//# sourceMappingURL=multiple-loader.d.ts.map
